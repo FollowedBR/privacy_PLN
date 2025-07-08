@@ -1,0 +1,8 @@
+Parâmetros de Treinamento do Checkpoint
+------------------------------------------
+Diretório do Modelo: modelo_drop_sm_01_iter_25
+Modelo Base: en_core_web_sm
+Total de Iterações até este ponto: 25
+Taxa de Dropout (drop): 0.0
+Tamanho do Dataset: 3790 exemplos
+Categorias Treinadas: SAUDE_ALTO, FINANCEIRO_ALTO, IDENTIFICACAO_ALTO, LOCATION_HIGH, CONTATO_MEDIO, DEMOGRAFICO_MEDIO, NAVEGACAO_MEDIO, PERFIL_MEDIO, SOCIAL_MEDIO, IDENTIFICACAO_MEDIO, TECNICO_BAIXO, OUTRO_BAIXO

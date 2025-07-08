@@ -1,0 +1,17 @@
+{
+  "labels":[
+    "SAUDE_ALTO",
+    "FINANCEIRO_ALTO",
+    "IDENTIFICACAO_ALTO",
+    "LOCATION_HIGH",
+    "CONTATO_MEDIO",
+    "DEMOGRAFICO_MEDIO",
+    "NAVEGACAO_MEDIO",
+    "PERFIL_MEDIO",
+    "SOCIAL_MEDIO",
+    "IDENTIFICACAO_MEDIO",
+    "TECNICO_BAIXO",
+    "OUTRO_BAIXO"
+  ],
+  "threshold":0.5
+}
