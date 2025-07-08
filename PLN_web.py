@@ -23,9 +23,9 @@ CUSTOM_CATEGORIES_VISUAL = {
 def carregar_modelo_base():
     """Carrega o modelo base do spaCy para segmentação de sentenças."""
     try:
-        return spacy.load("en_core_web_lg")
+        return spacy.load("en_core_web_sm")
     except OSError:
-        st.error("Modelo base 'en_core_web_lg' não encontrado. Por favor, execute: python -m spacy download en_core_web_lg")
+        st.error("Modelo base 'en_core_web_sm' não encontrado. Por favor, execute: python -m spacy download en_core_web_sm")
         return None
 
 @st.cache_resource
