@@ -5,18 +5,18 @@ from pathlib import Path
 from collections import defaultdict
 
 CUSTOM_CATEGORIES_VISUAL = {
-    "HEALTH_HIGH": {"label": "🔴 ALTA SENSIBILIDADE (Saúde)", "color": "#FF4B4B"},
-    "FINANCIAL_HIGH": {"label": "🔴 ALTA SENSIBILIDADE (Financeiro)", "color": "#FF4B4B"},
-    "IDENTIFICATION_HIGH": {"label": "🔴 ALTA SENSIBILIDADE (Identificação)", "color": "#FF4B4B"},
+    "SAUDE_ALTO": {"label": "🔴 ALTA SENSIBILIDADE (Saúde)", "color": "#FF4B4B"},
+    "FINANCEIRO_ALTO": {"label": "🔴 ALTA SENSIBILIDADE (Financeiro)", "color": "#FF4B4B"},
+    "IDENTIFICACAO_ALTO": {"label": "🔴 ALTA SENSIBILIDADE (Identificação)", "color": "#FF4B4B"},
     "LOCATION_HIGH": {"label": "🔴 ALTA SENSIBILIDADE (Localização)", "color": "#FF4B4B"},
-    "CONTACT_MEDIUM": {"label": "🟡 MÉDIA SENSIBILIDADE (Contato)", "color": "#FFC700"},
-    "DEMOGRAPHIC_MEDIUM": {"label": "🟡 MÉDIA SENSIBILIDADE (Demográfico)", "color": "#FFC700"},
-    "NAVIGATION_MEDIUM": {"label": "🟡 MÉDIA SENSIBILIDADE (Navegação)", "color": "#FFC700"},
-    "PROFILE_MEDIUM": {"label": "🟡 MÉDIA SENSIBILIDADE (Perfil)", "color": "#FFC700"},
-    "SOCIAL_MEDIUM": {"label": "🟡 MÉDIA SENSIBILIDADE (Social)", "color": "#FFC700"},
-    "IDENTIFICATION_MEDIUM": {"label": "🟡 MÉDIA SENSIBILIDADE (Identificação)", "color": "#FFC700"},
-    "TECHNICAL_LOW": {"label": "🟢 BAIXA SENSIBILIDADE (Técnico)", "color": "#28A745"},
-    "OTHER_LOW": {"label": "🟢 BAIXA SENSIBILIDADE (Não especificado)", "color": "#28A745"}
+    "CONTATO_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Contato)", "color": "#FFC700"},
+    "DEMOGRAFICO_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Demográfico)", "color": "#FFC700"},
+    "NAVEGACAO_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Navegação)", "color": "#FFC700"},
+    "PERFIL_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Perfil)", "color": "#FFC700"},
+    "SOCIAL_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Social)", "color": "#FFC700"},
+    "IDENTIFICACAO_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Identificação)", "color": "#FFC700"},
+    "TECNICO_BAIXO": {"label": "🟢 BAIXA SENSIBILIDADE (Técnico)", "color": "#28A745"},
+    "OUTRO_BAIXO": {"label": "🟢 BAIXA SENSIBILIDADE (Não especificado)", "color": "#28A745"}
 }
 
 @st.cache_resource
