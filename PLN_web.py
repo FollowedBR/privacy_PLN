@@ -8,7 +8,7 @@ CUSTOM_CATEGORIES_VISUAL = {
     "SAUDE_ALTO": {"label": "🔴 ALTA SENSIBILIDADE (Saúde)", "color": "#FF4B4B"},
     "FINANCEIRO_ALTO": {"label": "🔴 ALTA SENSIBILIDADE (Financeiro)", "color": "#FF4B4B"},
     "IDENTIFICACAO_ALTO": {"label": "🔴 ALTA SENSIBILIDADE (Identificação)", "color": "#FF4B4B"},
-    "LOCATION_HIGH": {"label": "🔴 ALTA SENSIBILIDADE (Localização)", "color": "#FF4B4B"},
+    "LOCALIZACAO_ALTO": {"label": "🔴 ALTA SENSIBILIDADE (Localização)", "color": "#FF4B4B"},
     "CONTATO_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Contato)", "color": "#FFC700"},
     "DEMOGRAFICO_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Demográfico)", "color": "#FFC700"},
     "NAVEGACAO_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Navegação)", "color": "#FFC700"},
