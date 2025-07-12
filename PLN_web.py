@@ -12,11 +12,14 @@ CUSTOM_CATEGORIES_VISUAL = {
     "CONTATO_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Contato)", "color": "#FFC700"},
     "DEMOGRAFICO_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Demográfico)", "color": "#FFC700"},
     "NAVEGACAO_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Navegação)", "color": "#FFC700"},
+    "COOKIES_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Cookies)", "color": "#FFC700"},
     "PERFIL_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Perfil)", "color": "#FFC700"},
     "SOCIAL_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Social)", "color": "#FFC700"},
     "IDENTIFICACAO_MEDIO": {"label": "🟡 MÉDIA SENSIBILIDADE (Identificação)", "color": "#FFC700"},
     "TECNICO_BAIXO": {"label": "🟢 BAIXA SENSIBILIDADE (Técnico)", "color": "#28A745"},
-    "OUTRO_BAIXO": {"label": "🟢 BAIXA SENSIBILIDADE (Não especificado)", "color": "#28A745"}
+    "PESQUISA_BAIXO": {"label": "🟢 BAIXA SENSIBILIDADE (Pesquisa)", "color": "#28A745"},
+    "OUTRO_BAIXO": {"label": "🟢 BAIXA SENSIBILIDADE (Não especificado)", "color": "#28A745"},
+    "NAO_ESPECIFICADO": {"label": "🟢 BAIXA SENSIBILIDADE (Não especificado)", "color": "#28A745"},
 }
 
 @st.cache_resource
@@ -59,7 +62,7 @@ def analisar_texto(texto_politica, nlp_base, nlp_custom):
         scores = doc_sentenca.cats
         
         for categoria, score in scores.items():
-            if score > 0.95:
+            if score > 0.5:
                 sentenca_normalizada = re.sub(r'\s+', ' ', sent.text.strip())
                 resultados[categoria].append((sentenca_normalizada, score))
     
@@ -104,7 +107,7 @@ def main():
         st.subheader("Resultados da Análise")
 
         if not resultados:
-            st.info("Nenhuma categoria de dado foi identificada com o limiar de confiança definido (80%).")
+            st.info("Nenhuma categoria de dado foi identificada.")
         else:
             sorted_results = sorted(
                 resultados.items(), 
@@ -124,7 +127,7 @@ def main():
                             st.markdown(f"""
                             <div style="border-left: 5px solid {color}; padding-left: 10px; margin-bottom: 10px;">
                                 <p><em>"{sentenca}"</em></p>
-                                <p style="text-align: right; font-size: 0.9em;"><strong>Confiança: {score:.2%}</strong></p>
+                                <p style="text-align: right; font-size: 0.9em;"></p>
                             </div>
                             """, unsafe_allow_html=True)
 
