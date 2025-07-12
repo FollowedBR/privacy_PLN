@@ -1,0 +1,1 @@
+Parâmetros: Modelo Base=en_core_web_sm, Iterações=25, Dropout=0.1
